@@ -14,7 +14,7 @@ steps:
     gitHubConnection: github
     target: master
     tagSource: gitTag
-    tagPattern: 'v.*'
+    tagPattern: 'd.*'
     title: latest rel
     releaseNotesSource: inline
     changeLogCompareToRelease: lastNonDraftReleaseByTag
