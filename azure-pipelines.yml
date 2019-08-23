@@ -19,5 +19,5 @@ steps:
     releaseNotesSource: inline
     changeLogCompareToRelease: lastNonDraftReleaseByTag
     changeLogCompareToReleaseTag: 'v.*'
-    changeLogType: issueBased
-    changeLogLabels: '[{"label": "trust", "displayName": "Trust Issues", "state": "open"}, {"label": "bug", "displayName": "Bugs Fixed", "state": "closed"}]'
+    changeLogType: commitBased
+    #changeLogLabels: '[{"label": "trust", "displayName": "Trust Issues", "state": "open"}, {"label": "bug", "displayName": "Bugs Fixed", "state": "closed"}]'
