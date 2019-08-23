@@ -18,6 +18,6 @@ steps:
     title: latest rel
     releaseNotesSource: inline
     changeLogCompareToRelease: lastNonDraftReleaseByTag
-    changeLogCompareToReleaseTag: 'v.*'
+    changeLogCompareToReleaseTag: 'd.*'
     changeLogType: commitBased
     #changeLogLabels: '[{"label": "trust", "displayName": "Trust Issues", "state": "open"}, {"label": "bug", "displayName": "Bugs Fixed", "state": "closed"}]'
