@@ -1,23 +1,5 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
-
-pool:
-  vmImage: 'ubuntu-latest'
+pool: default
 
 steps:
-- task: GitHubRelease@1
-  displayName: 'GitHub release (create)'
-  inputs:
-    gitHubConnection: github
-    target: master
-    tagSource: gitTag
-    tagPattern: 'd.*'
-    title: latest rel
-    releaseNotesSource: inline
-    changeLogCompareToRelease: lastNonDraftReleaseByTag
-    changeLogCompareToReleaseTag: 'd.*'
-    changeLogType: issueBased
-    changeLogLabels: '[{"label": "trust", "displayName": "Trust Issues"}, {"label": "bug", "displayName": "Bugs Fixed", "state": "closed"}]'
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
